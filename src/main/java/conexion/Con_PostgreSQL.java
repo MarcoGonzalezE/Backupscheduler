@@ -9,9 +9,9 @@ public class Con_PostgreSQL {
     static java.sql.Connection con = null;
 
     public static java.sql.Connection getConPostgreSQL(String Host, String Nom_DB, String user, String pass) {
+        String connectString = "jdbc:postgresql://" + Host + ":5432/" + Nom_DB;
         try {
-            Class.forName("org.postgresql.Driver");
-            String connectString = "jdbc:postgresql://" + Host + ":5432/" + Nom_DB;
+            Class.forName("org.postgresql.Driver");            
             Connection con = DriverManager.getConnection(connectString, user, pass);
             if (con != null) {
                 JOptionPane.showMessageDialog(null, "CONEXION CORRECTA");

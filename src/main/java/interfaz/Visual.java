@@ -30,6 +30,7 @@ public class Visual extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        TipoBD = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -66,6 +67,7 @@ public class Visual extends javax.swing.JFrame {
             }
         });
 
+        TipoBD.add(SQLServ);
         SQLServ.setText("SQL Server");
         SQLServ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -217,6 +219,7 @@ public class Visual extends javax.swing.JFrame {
     private javax.swing.JPasswordField Pass;
     private javax.swing.JRadioButton PostgreSQL;
     private javax.swing.JRadioButton SQLServ;
+    private javax.swing.ButtonGroup TipoBD;
     private javax.swing.JTextField User;
     private javax.swing.JButton conex;
     private javax.swing.JLabel jLabel1;
