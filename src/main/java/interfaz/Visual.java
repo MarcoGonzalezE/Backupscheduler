@@ -75,6 +75,7 @@ public class Visual extends javax.swing.JFrame {
             }
         });
 
+        TipoBD.add(PostgreSQL);
         PostgreSQL.setText("PostgreSQL");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
